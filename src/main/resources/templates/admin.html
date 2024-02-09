@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Admin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ecf0f1; /* Platinum */
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color:green;
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff; /* White */
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: #3498db; /* Dodger Blue */
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            font-size: 18px;
+            border: 2px solid #000; /* Black */
+        }
+
+        a:hover {
+            background-color: #2980b9; /* Belize Hole */
+            color: #fff; /* White */
+            border-color: #000; /* Black */
+        }
+        .logo {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            max-width: 150px; /* Adjust the max width as needed */
+            max-height: 130px; /* Adjust the max height as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔥 Welcome, Admin! 🔥</h1>
+
+    <a href="newvideo" id="newVideoBtn" onclick="changeHeadlineColor()">Add a new Video</a>
+
+    <br><br>
+
+    <a href="viewvideo">View all Videos</a>
+  <img class="logo" src="rx.jpeg" alt="Rx-Player Logo">
+    <script>
+        function changeHeadlineColor() {
+            document.getElementById("newVideoBtn").style.backgroundColor = "#e91e63"; /* Pink */
+            document.getElementById("newVideoBtn").style.color = "#fff"; /* White */
+            document.getElementById("newVideoBtn").style.borderColor = "#000"; /* Black */
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Center</title>
+    <style>
+        body {
+            font-family: 'Verdana', 'Geneva', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Arial', sans-serif;
+            background-color: #ecf0f1; /* Light Grey */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 100% viewport height */
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #2c3e50; /* Midnight Blue */
+            margin-bottom: 30px;
+            font-size: 2em; /* Increase font size */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff; /* White */
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: #3498db; /* Dodger Blue */
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 18px;
+        }
+
+        a:hover {
+            background-color: #2980b9; /* Belize Hole */
+            color: #fff; /* White */
+        }
+
+        .logo {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            max-width: 150px; /* Adjust the max width as needed */
+            max-height: 130px; /* Adjust the max height as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎓 Welcome to the Online Learning Center! 🎓</h1>
+
+    <a href="login" id="loginBtn" onclick="changeHeadlineColor('#27ae60')">LOGIN</a>
+
+    <br><br><br>
+
+    <a href="register" id="registerBtn" onclick="changeHeadlineColor('#e67e22')">REGISTER</a>
+
+    <img class="logo" src="rx.jpeg" alt="Rx-Player Logo">
+
+    <script>
+        function changeHeadlineColor(color) {
+            document.body.style.backgroundColor = color;
+            document.body.style.transition = 'background-color 0.5s';
+        }
+    </script>
+
+</body>
+</html>

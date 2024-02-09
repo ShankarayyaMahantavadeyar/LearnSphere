@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<style>
+iframe {
+	height: 600px;
+	width: 1500px
+}
+</style>
+<body>
+	<tbody>
+		<tr th:each="video:${video}">
+			<br>
+			<br>
+			<br>
+			<h1>
+				<td th:text="${video.name}">
+				<td>
+			</h1>
+			<br>
+			<td th:utext="${video.link}">
+			<td>
+		</tr>
+	</tbody>
+
+	</tbody>
+</body>
+</html>
